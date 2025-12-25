@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { siteConfig } from "@/config/siteConfig";
 import { Button } from "@/components/ui/Button";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, cubicBezier } from "framer-motion";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
       y: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut" as any,
+        ease: cubicBezier(0.42, 0, 0.58, 1),
       },
     },
     exit: {
@@ -26,7 +26,7 @@ const Navbar = () => {
       y: -20,
       transition: {
         duration: 0.3,
-        ease: "easeInOut" as any,
+        ease: cubicBezier(0.42, 0, 0.58, 1),
       },
     },
   };
