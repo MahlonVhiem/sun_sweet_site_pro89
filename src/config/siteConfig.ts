@@ -11,7 +11,7 @@ export const siteConfig = {
   contact: {
     phone: "+597-868-9487",
     email: "sunsweethotel86@gmail.com",
-    whatsapp: "5978689487", 
+    whatsapp: "5978689478", 
     address: "Jacobastraat #17, Paramaribo, Suriname",
   },
 };

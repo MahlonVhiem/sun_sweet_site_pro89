@@ -56,7 +56,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button
-            onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsapp}`, "_blank")}
+            onClick={() => window.open("https://wa.me/5978689478", "_blank")}
           >
             Book Now
           </Button>
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <Button
-                onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsapp}`, "_blank")}
+                onClick={() => window.open("https://wa.me/5978689478", "_blank")}
                 className="mt-4"
               >
                 Book Now

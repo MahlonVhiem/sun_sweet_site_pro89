@@ -36,7 +36,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="secondary"
-            onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsapp}`, "_blank")}
+            onClick={() => window.open("https://wa.me/5978689478", "_blank")}
           >
             Book Your Stay
           </Button>
