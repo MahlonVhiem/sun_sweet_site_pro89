@@ -9,8 +9,9 @@ export const siteConfig = {
     { name: "Contact", href: "/contact" },
   ],
   contact: {
-    phone: "+1234567890", // Replace with actual phone number
-    email: "info@sunsweethotel.com", // Replace with actual email
-    whatsapp: "1234567890", // Replace with actual WhatsApp number (no '+')
+    phone: "+597-868-9487",
+    email: "sunsweethotel86@gmail.com",
+    whatsapp: "5978689487", 
+    address: "Jacobastraat #17, Paramaribo, Suriname",
   },
 };
