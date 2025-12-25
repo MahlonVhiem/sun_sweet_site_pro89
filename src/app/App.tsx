@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
-import { siteConfig } from "@/config/siteConfig";
+
 import { MessageCircle } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 
@@ -23,7 +23,7 @@ function App() {
           size="icon"
           variant="secondary"
           className="rounded-full h-14 w-14 shadow-lg"
-          onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsapp}`, "_blank")}
+          onClick={() => window.open("https://wa.me/5978689478", "_blank")}
           aria-label="Book via WhatsApp"
         >
           <MessageCircle size={28} />

@@ -1,6 +1,6 @@
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
-import { siteConfig } from "@/config/siteConfig";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "@/components/animations/variants";
 
@@ -21,7 +21,7 @@ const CallToAction = () => {
         <Button
           size="lg"
           variant="secondary"
-          onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsapp}`, "_blank")}
+          onClick={() => window.open("https://wa.me/5978689478", "_blank")}
         >
           Book via WhatsApp
         </Button>
