@@ -30,14 +30,23 @@ const Contact = () => {
                   <Mail size={20} className="mr-4 mt-1 text-secondary" />
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-gray-600">{siteConfig.contact.email}</p>
+                    <a href={`mailto:${siteConfig.contact.email}`} className="text-gray-600 hover:text-primary transition-colors">
+                {siteConfig.contact.email}
+              </a>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-4 mt-1 text-secondary" />
                   <div>
                     <h4 className="font-semibold">Address</h4>
-                    <p className="text-gray-600">123 Hotel Street, Paradise City</p>
+                    <a 
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.contact.address)}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-primary transition-colors"
+                    >
+                      {siteConfig.contact.address}
+                    </a>
                   </div>
                 </li>
               </ul>

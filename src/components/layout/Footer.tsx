@@ -37,11 +37,20 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-3 text-secondary" />
-                <span>{siteConfig.contact.email}</span>
+                <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-primary transition-colors">
+                  {siteConfig.contact.email}
+                </a>
               </li>
               <li className="flex items-center">
                 <MapPin size={18} className="mr-3 text-secondary" />
-                <span>123 Hotel Street, Paradise City</span>
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.contact.address)}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary transition-colors"
+                >
+                  {siteConfig.contact.address}
+                </a>
               </li>
             </ul>
           </div>
