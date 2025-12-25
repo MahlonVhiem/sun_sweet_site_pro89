@@ -13,5 +13,6 @@ export const siteConfig = {
     email: "sunsmilehotel68@gmail.com",
     whatsapp: "5978689478", 
     address: "Jacobastraat #17, Paramaribo, Suriname",
+    googleMapsLink: "https://maps.app.goo.gl/isyxydReJLqVDU5G9?g_st=awb",
   },
 };

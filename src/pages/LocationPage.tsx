@@ -2,6 +2,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { Section } from "@/components/ui/Section";
 import { Heading } from "@/components/ui/Heading";
 import { MapPin } from "lucide-react";
+import { siteConfig } from "@/config/siteConfig";
 
 const LocationPage = () => {
   return (
@@ -12,12 +13,27 @@ const LocationPage = () => {
           subtitle="Find us easily in the heart of the city."
         />
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gray-200 h-96 w-full rounded-lg mb-8 flex items-center justify-center">
-            <p className="text-gray-500">Google Map will be embedded here.</p>
-          </div>
+          <iframe 
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(siteConfig.contact.address)}&output=embed`} 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Hotel Location"
+            className="rounded-lg"
+          ></iframe>
           <div className="flex justify-center items-center">
             <MapPin size={24} className="mr-3 text-secondary" />
-            <p className="text-xl">123 Hotel Street, Paradise City</p>
+            <a 
+              href={siteConfig.contact.googleMapsLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xl hover:text-primary transition-colors"
+            >
+              {siteConfig.contact.address}
+            </a>
           </div>
         </div>
       </Section>

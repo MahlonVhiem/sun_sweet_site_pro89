@@ -40,7 +40,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold">Address</h4>
                     <a 
-                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.contact.address)}`} 
+                      href={siteConfig.contact.googleMapsLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-primary transition-colors"

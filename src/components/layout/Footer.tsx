@@ -44,7 +44,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <MapPin size={18} className="mr-3 text-secondary" />
                 <a 
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.contact.address)}`} 
+                  href={siteConfig.contact.googleMapsLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-secondary transition-colors"
