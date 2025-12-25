@@ -18,7 +18,7 @@ const Navbar = () => {
       y: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
+        ease: "easeInOut" as any,
       },
     },
     exit: {
@@ -26,7 +26,7 @@ const Navbar = () => {
       y: -20,
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
+        ease: "easeInOut" as any,
       },
     },
   };
