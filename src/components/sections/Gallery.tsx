@@ -3,11 +3,16 @@ import { Heading } from "@/components/ui/Heading";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "@/components/animations/variants";
 
+import gallery1 from "@/assets/images/gallery-1.jpg";
+import gallery2 from "@/assets/images/gallery-2.jpg";
+import gallery3 from "@/assets/images/gallery-3.jpg";
+import gallery4 from "@/assets/images/gallery-4.jpg";
+
 const galleryImages = [
-  { src: "/src/assets/images/gallery-1.jpg", alt: "Hotel Room" },
-  { src: "/src/assets/images/gallery-2.jpg", alt: "Lobby" },
-  { src: "/src/assets/images/gallery-3.jpg", alt: "Swimming Pool" },
-  { src: "/src/assets/images/gallery-4.jpg", alt: "Exterior View" },
+  { src: gallery1, alt: "Beautifully designed hotel room with a plush bed and modern decor." },
+  { src: gallery2, alt: "Elegant hotel lobby with a comfortable seating area and stylish lighting." },
+  { src: gallery3, alt: "Luxurious swimming pool with crystal clear water and relaxing lounge chairs." },
+  { src: gallery4, alt: "Striking exterior view of the hotel, showcasing its modern architecture." },
 ];
 
 const Gallery = () => {

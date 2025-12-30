@@ -21,7 +21,7 @@ const CallToAction = () => {
         <Button
           size="lg"
           variant="secondary"
-          onClick={() => window.open("https://wa.me/5978689478", "_blank")}
+          onClick={() => window.open("https://wa.me/5978689487", "_blank")}
         >
           Book via WhatsApp
         </Button>

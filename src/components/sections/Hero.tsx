@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { staggerContainer, slideUp } from "@/components/animations/variants";
 import { siteConfig } from "@/config/siteConfig";
+import building from "@/assets/images/building.jpeg";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
       {/* Add your background image here */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/images/hero-bg.jpg')" }} // Placeholder
+        style={{ backgroundImage: `url(${building})` }}
       >
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -36,7 +37,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="secondary"
-            onClick={() => window.open("https://wa.me/5978689478", "_blank")}
+            onClick={() => window.open("https://wa.me/5978689487", "_blank")}
           >
             Book Your Stay
           </Button>

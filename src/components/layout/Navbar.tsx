@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Button } from "@/components/ui/Button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence, cubicBezier } from "framer-motion";
+import logo from "@/assets/images/logo.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,8 +35,8 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4 flex items-center justify-between h-20">
-        <Link to="/" className="text-2xl font-bold text-primary">
-          {siteConfig.name}
+        <Link to="/">
+          <img src={logo} alt="Sun Sweet" className="h-16 w-auto" />
         </Link>
 
         <div className="hidden md:flex items-center space-x-6">
@@ -56,7 +57,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button
-            onClick={() => window.open("https://wa.me/5978689478", "_blank")}
+            onClick={() => window.open("https://wa.me/5978689487", "_blank")}
           >
             Book Now
           </Button>
@@ -98,7 +99,7 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <Button
-                onClick={() => window.open("https://wa.me/5978689478", "_blank")}
+                onClick={() => window.open("https://wa.me/5978689487", "_blank")}
                 className="mt-4"
               >
                 Book Now

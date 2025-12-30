@@ -23,7 +23,7 @@ function App() {
           size="icon"
           variant="secondary"
           className="rounded-full h-14 w-14 shadow-lg"
-          onClick={() => window.open("https://wa.me/5978689478", "_blank")}
+          onClick={() => window.open("https://wa.me/5978689487", "_blank")}
           aria-label="Book via WhatsApp"
         >
           <MessageCircle size={28} />
